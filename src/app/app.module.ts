@@ -9,6 +9,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CodePush } from '@ionic-native/code-push/ngx';
+import { Sim } from '@ionic-native/sim/ngx';
+import { Device } from '@ionic-native/device/ngx';
+import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +21,9 @@ import { CodePush } from '@ionic-native/code-push/ngx';
     StatusBar,
     CodePush,
     SplashScreen,
+    Sim,
+    Device,
+    QRScanner,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
